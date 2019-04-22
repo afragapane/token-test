@@ -17,9 +17,19 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "preserve"
+    "jsx": "preserve",
+    "experimentalDecorators": true
   },
   "include": [
     "src"
+  ],
+  "plugins": [
+    {
+      "name": "@neo-one/smart-contract-typescript-plugin"
+    }
+  ],
+  "exclude": [
+    "one/contracts/*.ts",
+    "one/contracts/*.ts"
   ]
 }
